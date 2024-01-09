@@ -1,0 +1,19 @@
+CREATE TABLE Temperaturas (
+    Id INT(50) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    Dia DATE NOT NULL,
+    Hora TIME NOT NULL,
+    temperatura1 INT(2) NOT NULL,
+    temperatura2 INT(2) NOT NULL
+);
+
+
+INSERT INTO Temperaturas (Dia, hora, Temperatura1, Temperatura2)
+VALUES
+    ("2023/12/31", "12:30:00", 11, 45),
+    ("2023/12/31", "16:40:00", 09, 51),
+    ("2024/01/01", "12:30:00", 14, 39),
+    ("2024/01/01", "16:40:00", 21, 41),
+    ("2024/01/02", "12:30:00", 19, 50),
+    ("2024/01/02", "16:40:00", 19, 48),
+    ("2024/01/03", "12:30:00", 23, 40),
+    ("2024/01/03","16:40:00", 12, 37);
